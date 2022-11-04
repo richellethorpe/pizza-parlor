@@ -15,3 +15,17 @@ PizzaToppings.prototype.addMeatPricing = function() {
   return price + 5
  }
 }
+
+
+//UI Logic
+
+function handleForm(event) {
+  event.preventDefault();
+
+  
+}
+
+
+window.addEventListener('load', function() {
+  document.querySelector("form#pizza-selections").addEventListener("submit", handleForm);
+})
