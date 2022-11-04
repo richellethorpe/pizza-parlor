@@ -11,10 +11,12 @@
 
 ## Description
 This is an application that allows the user to select options to create a custom pizza and the site will display the unique cost of the pizza based upon the sections of the use. 
+
 ## Setup/Installation Requirements
 - Clone this repository to your desktop.
 - Navigate to the top level of the directory.
 - Open index.html in your browser.
+
 ## Tests
 
 Describe: Pizza()
@@ -27,6 +29,14 @@ Describe: Pizza.prototype.price()
 
 Test: it will display price of $12 if size is small. 
 Code: Pizza.prototype.price("small");
+Expected Outut: 12
+
+Test: it will display price of $16 if size is medium. 
+Code: Pizza.prototype.price("medium");
+Expected Outut: 16
+
+Test: it will display price of $20 if size is large. 
+Code: Pizza.prototype.price("large");
 Expected Outut: 12
 
 ## Known bugs

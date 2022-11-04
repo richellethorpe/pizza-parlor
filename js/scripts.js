@@ -1,20 +1,28 @@
 // //Business Logic
 // //user can select meat for $5 more, sauces and cheeses are free, other toppings are $1 more and size of pizza increases by $5 each size it goes up from small
 
-function Pizza((size, meat, cheese, topping) {
+function Pizza(size, meat, cheese, topping) {
   this.size = size;
   this.meat = meat;
   this.cheese = cheese;
   this.topping = topping;
   
-})
+};
 
-Pizza.prototype.price = function(size) {
+Pizza.prototype.sizePrice = function() {
   let price = 12
-  if (size === "medium") {
-    price +=4;
+  if (this.size ==="small"){
+    return price;
+  }else if(this.size === "medium") {
+    return price + 4; 
+  }else if(this.size === "large") {
+    return price +8;
   }
 };
+
+Pizza.prototype.toppingPrice = function() {
+  if(this.topping)
+}
 
 const pizza1 = new Pizza("medium", "peperoni", "mozzarella", "olives");
 
