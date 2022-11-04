@@ -9,3 +9,9 @@ function PizzaToppings (meatTopping, sauceTopping, cheeseTopping, otherToppings,
 }
 
 //user can select meat for $5 more, sauces and cheeses are free, other toppings are $1 more and size of pizza increases by $5 each size it goes up from small
+
+PizzaToppings.prototype.addMeatPricing = function() {
+ if this.meatTopping === true;{
+  return price + 5
+ }
+}
