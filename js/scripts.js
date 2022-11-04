@@ -20,9 +20,8 @@ Pizza.prototype.sizePrice = function() {
   }
 };
 
-Pizza.prototype.toppingPrice = function() {
-  if(this.topping)
-}
+
+
 
 const pizza1 = new Pizza("medium", "peperoni", "mozzarella", "olives");
 
