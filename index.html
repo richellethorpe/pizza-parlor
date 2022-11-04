@@ -27,15 +27,15 @@
         <br>
         <h2>Meat Options</h2>
         <label>
-          <input type="checkbox" name="meat-options" value="pepperoni">
+          <input type="checkbox" name="meat-options" value="pepperoni" cost="4">
           Pepperoni
         </label><br>
         <label>
-          <input type="checkbox" name="meat-options" value="sausage">
+          <input type="checkbox" name="meat-options" value="sausage" cost="4">
           Italian Sausage
         </label><br>
         <label>
-          <input type="checkbox" name="meat-options" value="bacon">
+          <input type="checkbox" name="meat-options" value="bacon" cost="4">
           Bacon
         </label><br><br>
         <h2>Cheese Options</h2>
@@ -67,7 +67,9 @@
         <button type="submit">SUBMIT</button>
       </div>
     </form>
-   
+   <div id="orderSummary" class="hidden">
+    <h2> The cost for a <span id="sizeSelection"></span>pizza with<span id="meatSelection"></span>,<span id="cheseSelection"></span>, and <span id="toppingSelection"></span> will bring your total to <span id="price"></span>.</h2>
+   </div>
   </div>
 </body>
 </html>
