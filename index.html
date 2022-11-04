@@ -23,52 +23,52 @@
         <option value="large">Large, 24 in</option>
       </select>
       <br>
-      <div class="checkBox input">
+      <div class="radio input">
         <br>
         <h2>Meat Options</h2>
         <label>
-          <input type="checkbox" name="meat-options" value="pepperoni" cost="4">
+          <input type="radio" name="meat-options" value="pepperoni" cost="4">
           Pepperoni
         </label><br>
         <label>
-          <input type="checkbox" name="meat-options" value="sausage" cost="4">
+          <input type="radio" name="meat-options" value="sausage" cost="4">
           Italian Sausage
         </label><br>
         <label>
-          <input type="checkbox" name="meat-options" value="bacon" cost="4">
+          <input type="radio" name="meat-options" value="bacon" cost="4">
           Bacon
         </label><br><br>
         <h2>Cheese Options</h2>
         <label>
-          <input type="checkbox" name="cheese-options" value="mozzarella">
+          <input type="radio" name="cheese-options" value="mozzarella">
           Mozzarella Cheese
         </label><br>
         <label>
-          <input type="checkbox" name="cheese-options" value="cheddar">
+          <input type="radio" name="cheese-options" value="cheddar">
           Cheddar
         </label><br>
         <label>
-          <input type="checkbox" name="cheese-options" value="dairy-free">
+          <input type="radio" name="cheese-options" value="dairy-free">
           Dairy-free Cheese
         </label><br><br>
         <h2>Topping Options</h2>
         <label>
-          <input type="checkbox" name="topping-options" value="olive">
+          <input type="radio" name="topping-options" value="olives">
           Olives
         </label><br>
         <label>
-          <input type="checkbox" name="topping-options" value="pepper">
+          <input type="radio" name="topping-options" value="peppers">
           Red Peppers
         </label><br>
         <label>
-          <input type="checkbox" name="topping-options" value="artichoke">
+          <input type="radio" name="topping-options" value="artichokes">
           Artichoke Hears
         </label><br>
         <button type="submit">SUBMIT</button>
       </div>
     </form>
    <div id="orderSummary" class="hidden">
-    <h2> The cost for a <span id="sizeSelection"></span>pizza with<span id="meatSelection"></span>,<span id="cheseSelection"></span>, and <span id="toppingSelection"></span> will bring your total to <span id="price"></span>.</h2>
+    <h2> The cost for a <span id="sizeSelectionDisplay"></span> pizza with <span id="meatSelectionDisplay"></span>,<span id="cheeseSelectionDisplay"></span>, and <span id="toppingSelectionDisplay"></span> will bring your total to <span id="priceDisplay"></span>.</h2>
    </div>
   </div>
 </body>
