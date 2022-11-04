@@ -1,5 +1,11 @@
 Describe: Pizza()
 
-Test: "It should return an object with the keys: size Selection, toppingList)
-Code: let newPizza = new Pizza("large", ["pepperoni", "mozzarella", "olives"])
-Expected Output: Pizza {sizeSelction: 'large', basePrice: 0, toppingList: Array(3), toppingListCost: 0, totalCost: 0}
+Test: "It should return an object with the keys: (size, meat, cheese, topping)
+Code: const pizza1 = new Pizza("large", "peperoni", "mozzarella", "olives")
+Expected Output: Pizza {size: 'large', meat: 'peperoni', cheese: 'mozzarella', topping: 'olives'}
+
+Describe: Pizza.prototype.price()
+
+Test: it will display price of $12 if size is small. 
+Code: Pizza.prototype.price("small");
+Expected Outut: 12

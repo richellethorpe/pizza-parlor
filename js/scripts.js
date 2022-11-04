@@ -1,33 +1,22 @@
 // //Business Logic
 // //user can select meat for $5 more, sauces and cheeses are free, other toppings are $1 more and size of pizza increases by $5 each size it goes up from small
 
-function Pizza(sizeSelection, meatSelection, cheeseSelction, toppingSelection) {
-  this.sizeSelection = sizeSelection
-  this.meatSelection = meatSelection
-  this.cheeseSelection = cheeseSelction
-  this.toppingSeletion = toppingSelection
-  this.basePrice= 0
+function Pizza((size, meat, cheese, topping) {
+  this.size = size;
+  this.meat = meat;
+  this.cheese = cheese;
+  this.topping = topping;
   
-}
+})
 
-Pizza.prototype.findBasePrice = function () {
+Pizza.prototype.price = function(size) {
+  let price = 12
+  if (size === "medium") {
+    price +=4;
+  }
+};
 
-  if (this.sizeSelection === "small") {
-    this.basePrice =12;
-    } else if (this.sizeSelction ==="medium") {
-    this.basePrice =16;
-    } else if (this.sizeSelction === "large") {
-    this.basePrice = 20;
-    }
-    console.log(this.basePrice);
-  };
-
-let newZa = new Pizza("large", "pepperoni", "cheddar", "olives");
-
-function getPrice(pizza){
-
-}
-
+const pizza1 = new Pizza("medium", "peperoni", "mozzarella", "olives");
 
 //UI Logic
 
@@ -53,4 +42,4 @@ function handleSubmit(event) {
 window.addEventListener('load', function() {
   const form = document.querySelector("form");
   form.addEventListener('submit', handleSubmit);
-})
+});
