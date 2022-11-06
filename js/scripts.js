@@ -1,29 +1,27 @@
-// //Business Logic
-// //user can select meat for $5 more, sauces and cheeses are free, other toppings are $1 more and size of pizza increases by $5 each size it goes up from small
+// // //Business Logic
+// // //user can select meat for $5 more, sauces and cheeses are free, other toppings are $1 more and size of pizza increases by $5 each size it goes up from small
 
-function Pizza(size, meat, cheese, topping) {
+function Pizza(size, toppings) {
   this.size = size;
-  this.meat = meat;
-  this.cheese = cheese;
-  this.topping = topping;
+  this.toppings = toppings;
+  this.toppingsPrice = {}
   
 };
 
+// function PizzaAddOns(meat, cheese, )
 Pizza.prototype.sizePrice = function() {
-  let price = 12
+  let sizePrice = 12
   if (this.size ==="small"){
-    return price;
+    return sizePrice;
   }else if(this.size === "medium") {
-    return price + 4; 
+    return sizePrice + 4; 
   }else if(this.size === "large") {
-    return price +8;
+    return sizePrice +8;
   }
+
 };
 
-
-
-
-const pizza1 = new Pizza("medium", "peperoni", "mozzarella", "olives");
+// const pizza1 = new Pizza("medium", "peperoni", "mozzarella", "olives");
 
 //UI Logic
 
@@ -35,11 +33,13 @@ function handleSubmit(event) {
   const cheseSelectionValue = document.querySelector("input[name=cheese-options]:checked").value;
   const toppingSelectionValue =document.querySelector("input[name=topping-options]:checked").value;
   //const price = "";
+  const toppingSelectionPrice =document.querySelector("input[name=topping-options]:checked").price;
 
   document.getElementById("sizeSelectionDisplay").innerText = sizeSelectionValue;
   document.getElementById("meatSelectionDisplay").innerText = meatSelectionValue;
   document.getElementById("cheeseSelectionDisplay").innerText = cheseSelectionValue;
   document.getElementById("toppingSelectionDisplay").innerText = toppingSelectionValue;
+  console.log(toppingSelectionPrice);
 
 
   document.getElementById('orderSummary').removeAttribute('class');
@@ -49,4 +49,4 @@ function handleSubmit(event) {
 window.addEventListener('load', function() {
   const form = document.querySelector("form");
   form.addEventListener('submit', handleSubmit);
-});
+})
