@@ -12,7 +12,7 @@
   <div class="container" id="main">
     <h1>Welcome to the Michelangelo's pizza parlor! Please enter your order below:</h1>
     <form id="orderUp">
-      <label for="pizzaSize">Pizza Size</label><br>
+      <label for="pizza-size">Pizza Size</label><br>
       <select name="pizza-size" id="pizza-size">
         <option default="">--Size--</option>
         <option value="small">Small, 12 in</option>
@@ -22,35 +22,35 @@
         <div id="form-values">
           <legend>Choose your pizza toppings:</legend>
           <div>
-            <label>
-              <input type="checkbox" value="spinach" id="spinach" name="toppings" checked>
+            <label for="spinach">
+              <input type="checkbox" value="spinach" id="spinach" name="toppings">
               Spinach
             </label>
-            <label>
+            <label for="olives">
               <input type="checkbox" value="olives" id="olives" name="toppings">
               Peppers</label>
-            <label>
+            <label for="tomatoes">
               <input type="checkbox" value="tomatos" id="tomatos" name="toppings">
               Tomato
             </label>
-            <label>
+            <label for="mushrooms">
               <input type="checkbox" value="mushrooms" id="mushrooms" name="toppings">
               Mushrooms
             </label>
           </div>
           <div>
-            <label>
+            <label for="truffle-oil">
               <input type="checkbox" value="truffle-oil" id="truffle-oil" name="toppings">
               Truffle Oil</label>
-            <label>
+            <label for="sausage">
               <input type="checkbox" value="sausage" id="sausage" name="toppings">
               Sausage
             </label>
-            <label>
+            <label for="ham">
               <input type="checkbox" value="ham" id="ham" name="toppings">
               Ham
             </label>
-            <label>
+            <label for="pepperoni">
               <input type="checkbox" value="pepperoni" id="pepperoni" name="toppings">
               Pepperoni
             </label>
@@ -59,7 +59,7 @@
       <button type="submit">SUBMIT</button>
     </form>
   </div>
-  <div class="container" id="result">
+  <div id="result" class="hidden">
     <!--insert results-->
   </div>
 </body>

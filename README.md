@@ -37,7 +37,11 @@ Expected Outut: 16
 
 Test: it will display price of $20 if size is large. 
 Code: Pizza.prototype.price("large");
-Expected Outut: 12
+Expected Outut: 20
+
+Test: it will add price of toppings
+Code: Pizza.prototype.price("large");
+Expected Outut: 20
 
 ## Known bugs
 
