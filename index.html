@@ -4,76 +4,63 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
-  <title>Leo's Pizza Parlor</title>
+  <title>Mikey's Pizza Parlor</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <div calss="mask">
-        <h1>Leo's Pizza Parlor</h1>
-      </div>
-    </div>
-    <form id="pizza-selections">
-      <h2>Choose a size:</h2>
-      <select id="size-options">
-        <option default>size:</option>
-        <option value="small">Small, 12in</option>
-        <option value="medium">Medium, 18in</option>
+  <img src="img/turtle.jpg" class="floating">
+  <div class="container" id="main">
+    <h1>Welcome to the Michelangelo's pizza parlor! Please enter your order below:</h1>
+    <form id="orderUp">
+      <label for="pizzaSize">Pizza Size</label><br>
+      <select name="pizza-size" id="pizza-size">
+        <option default="">--Size--</option>
+        <option value="small">Small, 12 in</option>
+        <option value="medium">Medium, 18 in</option>
         <option value="large">Large, 24 in</option>
       </select>
-      <br>
-      <div class="radio input">
-        <br>
-        <h2>Meat Options</h2>
-        <label>
-          <input type="radio" name="meat-options" value="pepperoni" cost="4"checked>
-          Pepperoni
-        </label><br>
-        <label>
-          <input type="radio" name="meat-options" value="sausage" cost="4">
-          Italian Sausage
-        </label><br>
-        <label>
-          <input type="radio" name="meat-options" value="bacon" cost="4">
-          Bacon
-        </label><br><br>
-        <h2>Cheese Options</h2>
-        <label>
-          <input type="radio" name="cheese-options" value="mozzarella" checked>
-          Mozzarella Cheese
-        </label><br>
-        <label>
-          <input type="radio" name="cheese-options" value="cheddar">
-          Cheddar
-        </label><br>
-        <label>
-          <input type="radio" name="cheese-options" value="dairy-free">
-          Dairy-free Cheese
-        </label><br><br>
-        <h2>Topping Options</h2>
-        <label>
-          <input type="radio" name="topping-options" value="spinach" price="2" checked>
-          Spinach
-        </label><br>
-        <label>
-          <input type="radio" name="topping-options" value="olives" price="2">
-          Olives
-        </label><br>
-        <label>
-          <input type="radio" name="topping-options" value="peppers" price="2">
-          Red Peppers
-        </label><br>
-        <label>
-          <input type="radio" name="topping-options" value="artichokes">
-          Artichoke Hears
-        </label><br>
-        <button type="submit">SUBMIT</button>
-      </div>
+        <div id="form-values">
+          <legend>Choose your pizza toppings:</legend>
+          <div>
+            <label>
+              <input type="checkbox" value="spinach" id="spinach" name="toppings" checked>
+              Spinach
+            </label>
+            <label>
+              <input type="checkbox" value="olives" id="olives" name="toppings">
+              Peppers</label>
+            <label>
+              <input type="checkbox" value="tomatos" id="tomatos" name="toppings">
+              Tomato
+            </label>
+            <label>
+              <input type="checkbox" value="mushrooms" id="mushrooms" name="toppings">
+              Mushrooms
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" value="truffle-oil" id="truffle-oil" name="toppings">
+              Truffle Oil</label>
+            <label>
+              <input type="checkbox" value="sausage" id="sausage" name="toppings">
+              Sausage
+            </label>
+            <label>
+              <input type="checkbox" value="ham" id="ham" name="toppings">
+              Ham
+            </label>
+            <label>
+              <input type="checkbox" value="pepperoni" id="pepperoni" name="toppings">
+              Pepperoni
+            </label>
+          </div>
+        </div>
+      <button type="submit">SUBMIT</button>
     </form>
-   <div id="orderSummary" class="hidden">
-    <h2> The cost for a <span id="sizeSelectionDisplay"></span> pizza with <span id="meatSelectionDisplay"></span>, <span id="cheeseSelectionDisplay"></span>, and <span id="toppingSelectionDisplay"></span> will bring your total to <span id="priceDisplay"></span>.</h2>
-   </div>
+  </div>
+  <div class="container" id="result">
+    <!--insert results-->
   </div>
 </body>
 </html>
