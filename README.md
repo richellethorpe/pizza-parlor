@@ -38,6 +38,12 @@ let newPizza = new Pizza("spinach", "medium");
 newPizza.price();
 Expected Outut: 16
 
+Test: it will increase price to $20 if size is large. 
+Code: 
+let newPizza = new Pizza("spinach", "large");
+newPizza.price();
+Expected Outut: 20
+
 
 
 ## Known bugs
