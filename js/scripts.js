@@ -3,10 +3,12 @@
 function Pizza (toppings, size) {
   this.toppings = toppings;
   this.size = size;
-  totalCost = 0
+  let totalCost = 0
   }
 
-  
+  Pizza.prototype.price = function (){
+
+  }
   
 
   // UI Logic

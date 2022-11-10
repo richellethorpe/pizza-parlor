@@ -27,7 +27,9 @@ Expected Output: Pizza {toppings: 'spinach', size: 'large'}
 Describe: Pizza.prototype.price()
 
 Test: it will display price of $12 if size is small. 
-Code: Pizza.prototype.price("small");
+Code: 
+let newPizza = new Pizza("spinach", "small");
+newPizza.price();
 Expected Outut: 12
 
 
