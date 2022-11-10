@@ -44,6 +44,11 @@ let newPizza = new Pizza("spinach", "large");
 newPizza.price();
 Expected Outut: 20
 
+Test: it will increase the total cost by $.50 if spinach topping is added.
+let newPizza = new Pizza("spinach", "large");
+newPizza.price();
+Expected Outut: 20.50
+
 
 
 ## Known bugs

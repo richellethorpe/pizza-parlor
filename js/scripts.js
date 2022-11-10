@@ -15,6 +15,7 @@ function Pizza (toppings, size) {
     }else if (this.size === "large"){
       totalCost+= 20;
     }
+  
   console.log(totalCost)
   }
   
