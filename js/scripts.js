@@ -5,6 +5,8 @@ function Pizza (toppings, size) {
   this.size = size;
   totalCost = 0
   }
+
+  
   
 
   // UI Logic

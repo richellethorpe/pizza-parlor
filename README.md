@@ -24,6 +24,13 @@ Test: "It should return an object with the keys: (toppings, size)
 Code: newPizza = new Pizza ("spinach", "large");
 Expected Output: Pizza {toppings: 'spinach', size: 'large'}
 
+Describe: Pizza.prototype.price()
+
+Test: it will display price of $12 if size is small. 
+Code: Pizza.prototype.price("small");
+Expected Outut: 12
+
+
 
 ## Known bugs
 
