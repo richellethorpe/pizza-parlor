@@ -21,27 +21,7 @@ This is an application that allows the user to select options to create a custom
 
 Describe: Pizza()
 
-Test: "It should return an object with the keys: (size, meat, cheese, topping)
-Code: const pizza1 = new Pizza("large", "peperoni", "mozzarella", "olives")
-Expected Output: Pizza {size: 'large', meat: 'peperoni', cheese: 'mozzarella', topping: 'olives'}
 
-Describe: Pizza.prototype.price()
-
-Test: it will display price of $12 if size is small. 
-Code: Pizza.prototype.price("small");
-Expected Outut: 12
-
-Test: it will display price of $16 if size is medium. 
-Code: Pizza.prototype.price("medium");
-Expected Outut: 16
-
-Test: it will display price of $20 if size is large. 
-Code: Pizza.prototype.price("large");
-Expected Outut: 20
-
-Test: it will add price of toppings
-Code: Pizza.prototype.price("large");
-Expected Outut: 20
 
 ## Known bugs
 

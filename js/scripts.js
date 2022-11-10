@@ -5,28 +5,7 @@ function Pizza (toppings, size) {
   this.size = size;
   }
   
-  Pizza.prototype.getCost = function() {
-  let sizePrice = 12
-  if (this.size ==="small"){
-    return sizePrice;
-  }else if(this.size === "medium") {
-    return sizePrice + 4; 
-  }else if(this.size === "large") {
-    return sizePrice +8;
-  }
-  
-    let toppingsCost = 0;
-    if (pizza.toppings.includes('spinach') || pizza.toppings.includes('olives') || pizza.toppings.includes('mushrooms') || pizza.toppings.includes('tomatos')) {
-      toppingsCost += 0.50; }
-    if (pizza.toppings.includes('pepperoni') || pizza.toppings.includes('sausage') || pizza.toppings.includes('ham')) {
-      toppingsCost += 1.00; }
-    if (pizza.toppings.includes('truffle-oil')) {
-      toppingsCost += 2.00; }
-  
-    let totalCost = sizePrice + toppingsCost;
-    console.log(totalCost);
-  };
-  
+
   // UI Logic
   
   function handlePizzaOrder(e) {
