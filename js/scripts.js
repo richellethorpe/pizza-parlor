@@ -19,7 +19,8 @@ function Pizza (toppings, size) {
     this.toppings.forEach(function(topping){
       if (topping.includes('spinach') ||topping.includes('olives') || topping.includes('mushrooms') || topping.includes('tomatos')) {
         totalCost += 0.50; }
-
+        if (topping.includes('sausage') ||topping.includes('ham') || topping.includes('pepperoni')) {
+          totalCost += 2; }
     });
     return totalCost;
     }
