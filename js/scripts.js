@@ -3,7 +3,6 @@
 function Pizza (toppings, size) {
   this.toppings = toppings;
   this.size = size;
-  let totalCost = 0
   }
 
   Pizza.prototype.price = function (){
@@ -43,13 +42,10 @@ function Pizza (toppings, size) {
     });
   
     let pizzaOrder = new Pizza(toppings, pizzaSize);
-    console.log(pizzaOrder)
     let costOf = pizzaOrder.price()
-    console.log(costOf);
-    //h2.append("Your pizza has been submitted.");
     document.querySelector("div#result").removeAttribute("class");
-    document.querySelector("h4#resultDisplay").innerText = ("Your total comes to $" + costOf + ". Have a turtley awesome day dude!");
-    //document.body.append(h2, paragraph);
+    document.querySelector("h4#resultDisplay").innerText = ("Your total comes to $" + costOf + "*");
+    
   }
   
   
