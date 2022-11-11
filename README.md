@@ -59,11 +59,6 @@ let newPizza = new Pizza(["spinach", "olives", "ham", "pepperoni"], "large");
 newPizza.price();
 Expected Outut: 25
 
-
-
-
-
-
 ## Known bugs
 
 ## License information

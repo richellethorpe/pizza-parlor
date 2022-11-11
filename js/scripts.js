@@ -17,7 +17,7 @@ function Pizza (toppings, size) {
     }
 
     this.toppings.forEach(function(topping){
-      if (topping.includes('spinach') ||topping.includes('olives') || topping.includes('mushrooms') || topping.includes('tomatos')) {
+      if (topping.includes('spinach') ||topping.includes('olives')  ||topping.includes('anchovies') || topping.includes('mushrooms') || topping.includes('tomatos')) {
         totalCost += 0.50; }
         if (topping.includes('sausage') ||topping.includes('ham') || topping.includes('pepperoni')) {
           totalCost += 2; }
@@ -30,7 +30,7 @@ function Pizza (toppings, size) {
   
   function handlePizzaOrder(e) {
     e.preventDefault();
-  
+    console.log('loaded');
     const paragraph = document.createElement("p");
     const h2 = document.createElement("h2");
     const pizzaSize = document.getElementById("pizza-size").value;
@@ -46,9 +46,10 @@ function Pizza (toppings, size) {
     console.log(pizzaOrder)
     let costOf = pizzaOrder.price()
     console.log(costOf);
-    h2.append("Your pizza has been submitted.");
-    paragraph.append("Your total is $" + costOf +". Made with love and turtle power!");
-    document.body.append(h2, paragraph);
+    //h2.append("Your pizza has been submitted.");
+    document.querySelector("div#result").removeAttribute("class");
+    document.querySelector("h4#resultDisplay").innerText = ("Your total comes to: $" + costOf + ". Have a turtley awesome day dude!");
+    //document.body.append(h2, paragraph);
   }
   
   
