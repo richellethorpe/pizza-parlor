@@ -22,7 +22,7 @@ function Pizza (toppings, size) {
         if (topping.includes('sausage') ||topping.includes('ham') || topping.includes('pepperoni')) {
           totalCost += 2; }
     });
-    return totalCost;
+    return totalCost.toFixed(2);
     }
 
 
@@ -48,7 +48,7 @@ function Pizza (toppings, size) {
     console.log(costOf);
     //h2.append("Your pizza has been submitted.");
     document.querySelector("div#result").removeAttribute("class");
-    document.querySelector("h4#resultDisplay").innerText = ("Your total comes to: $" + costOf + ". Have a turtley awesome day dude!");
+    document.querySelector("h4#resultDisplay").innerText = ("Your total comes to $" + costOf + ". Have a turtley awesome day dude!");
     //document.body.append(h2, paragraph);
   }
   

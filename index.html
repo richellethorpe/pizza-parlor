@@ -8,17 +8,23 @@
 </head>
 
 <body>
-  <img src="img/turtle.jpg" class="floating">
+  <img src="img/turtle.jpg" alt="an image of the ninja turtle Michelangelo">
   <div class="container" id="main">
-    <h1>Welcome to the Michelangelo's pizza parlor! Please enter your order below:</h1>
+    <h1>Welcome to Michelangelo's pizza parlor! </h1>
+    <h2>Please enter your order below:</h2>
+    <br>
+
     <form id="orderUp">
-      <label for="pizza-size">Pizza Size</label><br>
+      <legend>Select Size</legend>
+      <label for="pizza-size"</label>
       <select name="pizza-size" id="pizza-size">
         <option default="">--Size--</option>
         <option value="small">Small, 12 in</option>
         <option value="medium">Medium, 18 in</option>
         <option value="large">Large, 24 in</option>
       </select>
+      <br>
+      <br>
         <div id="form-values">
           <legend>Choose your pizza toppings:</legend>
           <div>
@@ -54,12 +60,14 @@
             </label>
           </div>
         </div>
+       <br> 
       <button type="submit">SUBMIT</button>
     </form>
   </div>
   <div id="result" class="hidden">
-   <h3>Thank you for your order!</h3>
+   <h3>Thank you for your order.</h3>
    <h4 id="resultDisplay"></h4>
+   
    
   </div>
 </body>
