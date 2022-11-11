@@ -13,12 +13,10 @@
     <h1>Welcome to Michelangelo's pizza parlor! </h1>
     <h2>Please enter your order below:</h2>
     <br>
-
     <form id="orderUp">
-      <legend>Select Size</legend>
-      <label for="pizza-size"</label>
+      <label for="pizza-size">Select:</label>
       <select name="pizza-size" id="pizza-size">
-        <option default="">--Size--</option>
+        <option default="">--Pizza Size--</option>
         <option value="small">Small, 12 in</option>
         <option value="medium">Medium, 18 in</option>
         <option value="large">Large, 24 in</option>
@@ -26,7 +24,7 @@
       <br>
       <br>
         <div id="form-values">
-          <legend>Choose your pizza toppings:</legend>
+          <h3>Choose your pizza toppings:</h3>
           <div>
             <label for="spinach">
               <input type="checkbox" value="spinach" id="spinach" name="toppings">
@@ -36,7 +34,7 @@
               <input type="checkbox" value="olives" id="olives" name="toppings">
               Peppers</label>
             <label for="tomatoes">
-              <input type="checkbox" value="tomatos" id="tomatos" name="toppings">
+              <input type="checkbox" value="tomatoes" id="tomatoes" name="toppings">
               Tomato
             </label>
             <label for="mushrooms">
@@ -68,8 +66,6 @@
    <h3>Thank you for your order!</h3>
    <h4 id="resultDisplay"></h4>
    <p> Made with love and turtle power, dude!</p>
-   
-   
   </div>
 </body>
 </html>
