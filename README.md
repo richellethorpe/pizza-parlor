@@ -48,10 +48,16 @@ Test: it will increase the total cost by $.50 if spinach topping is added.
 let newPizza = new Pizza("spinach", "large");
 newPizza.price();
 Expected Outut: 20.50
+
 Test: it will increase the total cost by $.50 each if multiple toppings are added.
 let newPizza = new Pizza(["spinach", "olives"], "large");
 newPizza.price();
 Expected Outut: 21
+
+Test: it will increase the total cost by $2 each if meat toppings are added.
+let newPizza = new Pizza(["spinach", "olives", "ham", "pepperoni"], "large");
+newPizza.price();
+Expected Outut: 25
 
 
 
