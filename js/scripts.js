@@ -7,7 +7,7 @@ function Pizza (toppings, size) {
   }
 
   Pizza.prototype.price = function (){
-    let totalCost=0
+    let totalCost = 0
     if (this.size === "small") {
        totalCost+= 12;
     }else if (this.size === "medium") {
@@ -15,11 +15,15 @@ function Pizza (toppings, size) {
     }else if (this.size === "large"){
       totalCost+= 20;
     }
-    if(this.toppings === "spinach")
-      totalCost+= .50;
-  console.log(totalCost)
-  }
-  
+
+    this.toppings.forEach(function(topping){
+      if (topping.includes('spinach') ||topping.includes('olives') || topping.includes('mushrooms') || topping.includes('tomatos')) {
+        totalCost += 0.50; }
+
+    });
+    return totalCost;
+    }
+
 
   // UI Logic
   
@@ -39,7 +43,7 @@ function Pizza (toppings, size) {
   
     let pizzaOrder = new Pizza(toppings, pizzaSize);
     console.log(pizzaOrder)
-    let costOf = pizzaOrder.getCost(pizzaOrder)
+    let costOf = pizzaOrder.price()
     console.log(costOf);
     h2.append("Your pizza has been submitted.");
     paragraph.append("Your total is $" + costOf +". Made with love and turtle power!");
