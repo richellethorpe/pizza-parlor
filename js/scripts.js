@@ -29,11 +29,10 @@ function Pizza (toppings, size) {
   
   function handlePizzaOrder(e) {
     e.preventDefault();
-    console.log('loaded');
     const paragraph = document.createElement("p");
     const h2 = document.createElement("h2");
     const pizzaSize = document.getElementById("pizza-size").value;
-    let toppingInput = document.querySelectorAll("input[name=toppings]:checked"); // NodeList
+    let toppingInput = document.querySelectorAll("input[name=toppings]:checked"); 
     let toppingArray = Array.from(toppingInput);
     const toppings = [];
   
@@ -44,7 +43,7 @@ function Pizza (toppings, size) {
     let pizzaOrder = new Pizza(toppings, pizzaSize);
     let costOf = pizzaOrder.price()
     document.querySelector("div#result").removeAttribute("class");
-    document.querySelector("h4#resultDisplay").innerText = ("Your total comes to $" + costOf + "*");
+    document.querySelector("h4#resultDisplay").innerText = ("Your total comes to $" + costOf);
     
   }
   
